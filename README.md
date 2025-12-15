@@ -32,13 +32,13 @@ We run HACE-Net and previous methods on a system running Ubuntu 22.04, with Pyth
 
 ###  Models Evaluation
 
-![](tables/1.png)
+![](tables/table1.png)
 
 Figure 7: Patch- and subject-level baseline performance across all datasets. Results are reported as Accuracy / Specificity (%). Red background indicates the best result, Blue background indicates the runner-up model , and blue text in other rows indicates isolated second-best results.
 
 ### Ablation Study
 
-![](tables/2.png)
+![](tables/table2.png)
 
 Figure 8: Ablation study on patch-level performance. The best results are highlighted in red with a light red background, and the second-best results are in blue with a light blue background.
 
