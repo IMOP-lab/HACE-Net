@@ -396,13 +396,3 @@ class HACENet(nn.Module):
 
 
 
-if __name__ == "__main__":
-    B, C, F1, F2, F3, F4, D, num_cls = 8, 64, 8, 5, 6, 2000, 4, 3
-    psd_feats       = torch.randn(B, C, F1)
-    wavelet_feats   = torch.randn(B, C, F2)
-    nonlinear_feats = torch.randn(B, C, F3)
-    raw_eeg_data    = torch.randn(B, C, F4)
-    coherence_feats = torch.randn(B, C, C)  
-    model_gmm = HACENet()
-    logits_b, fused_b, loss_b = model_gmm(psd_feats, wavelet_feats, nonlinear_feats, raw_eeg_data,coherence_feats)
-    print("Baseline - fused_logits:", fused_b.shape, "recon_loss:", loss_b.item())
